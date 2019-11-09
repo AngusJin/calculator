@@ -1,8 +1,5 @@
 package com.example.demo1;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +7,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_land);
         Intent intent= getIntent();
         String data=intent.getStringExtra("extra_data");
         TextView txt = (TextView) findViewById(R.id.txt);
