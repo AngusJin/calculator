@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/GridLayout1"
+    android:id="@+id/GridLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:columnCount="4"
-    android:rowCount="8"
+    android:rowCount="9"
     android:orientation="horizontal"
     android:background="@color/black">
 
@@ -18,47 +17,6 @@
         android:gravity="right"
         android:textSize="50sp"
         android:maxLines="1"/>
-
-    <Button
-        android:id="@+id/binary_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="进制转换" />
-    <Button
-        android:id="@+id/more_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="更多..." />
-    <Button
-        android:id="@+id/sin_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="Sin" />
-    <Button
-        android:id="@+id/cos_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="Cos" />
-
-    <Button
-        android:id="@+id/left_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="(" />
-    <Button
-        android:id="@+id/right_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text=")" />
-
 
     <Button
         android:id="@+id/del_button"
@@ -77,11 +35,57 @@
         android:text="清空" />
 
     <Button
-        android:id="@+id/plus_button"
+        android:id="@+id/btd_button"
+        android:layout_columnSpan="2"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="+" />
+        android:text="二→十" />
+    <Button
+        android:id="@+id/dtb_button"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="十→二" />
+    <Button
+        android:id="@+id/dto_button"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="十→八" />
+
+    <Button
+        android:id="@+id/otd_button"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="八→十" />
+
+    <Button
+        android:id="@+id/dth_button"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="十→十六" />
+
+    <Button
+        android:id="@+id/htd_button"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="十六→十" />
+
+    <Button
+        android:id="@+id/mmtocm_button"
+        android:layout_gravity="fill"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="mm→cm" />
 
     <Button
         android:id="@+id/one_button"
@@ -105,11 +109,11 @@
         android:text="3" />
 
     <Button
-        android:id="@+id/minus_button"
+        android:id="@+id/cmtom_button"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="－" />
+        android:text="cm→m" />
 
     <Button
         android:id="@+id/four_button"
@@ -133,11 +137,11 @@
         android:text="6" />
 
     <Button
-        android:id="@+id/multiplication_button"
+        android:id="@+id/mtokm_button"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="×" />
+        android:text="m→km" />
 
     <Button
         android:id="@+id/seven_button"
@@ -161,18 +165,18 @@
         android:text="9" />
 
     <Button
-        android:id="@+id/division_button"
+        android:id="@+id/mtoinch_button"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="/" />
+        android:text="m→inch" />
 
     <Button
-        android:id="@+id/point_button"
+        android:id="@+id/help_button"
         android:layout_gravity="fill"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
-        android:text="."
+        android:text="..."
         android:textSize="40sp" />
 
     <Button
@@ -189,4 +193,6 @@
         android:layout_rowWeight="1"
         android:background="@color/orange"
         android:text="=" />
+
+
 </GridLayout>
