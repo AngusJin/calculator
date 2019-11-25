@@ -1,192 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/GridLayout1"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="4"
-    android:rowCount="8"
-    android:orientation="horizontal"
-    android:background="@color/black">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txt"
-        android:layout_rowSpan="2"
-        android:layout_columnSpan="4"
-        android:layout_gravity="fill"
-        android:textColor="@color/white"
-        android:text="0"
-        android:gravity="right"
-        android:textSize="50sp"
-        android:maxLines="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/binary_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="进制转换" />
-    <Button
-        android:id="@+id/more_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="更多..." />
-    <Button
-        android:id="@+id/sin_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="Sin" />
-    <Button
-        android:id="@+id/cos_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="Cos" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/left_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="(" />
-    <Button
-        android:id="@+id/right_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text=")" />
+            <EditText
+                android:id="@+id/screen"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="20dp"
+                android:gravity="right"
+                android:paddingTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+        </LinearLayout>
 
 
-    <Button
-        android:id="@+id/del_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="删除" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/clear_button"
-        android:layout_columnSpan="2"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="清空" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/plus_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="+" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/one_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="1" />
+                    <Button
+                        android:id="@+id/clear_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:text="C" />
 
-    <Button
-        android:id="@+id/two_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="2" />
+                    <Button
+                        android:id="@+id/lose_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:text="+/-" />
 
-    <Button
-        android:id="@+id/three_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="3" />
+                    <Button
+                        android:id="@+id/percent_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_white"
+                        android:gravity="center"
+                        android:text="%" />
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/minus_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="－" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/four_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="4" />
+                    <Button
+                        android:id="@+id/seven_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/five_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="5" />
+                    <Button
+                        android:id="@+id/eight_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/six_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="6" />
+                    <Button
+                        android:id="@+id/nine_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/white" />
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/multiplication_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="×" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/seven_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="7" />
+                    <Button
+                        android:id="@+id/four_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/eight_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="8" />
+                    <Button
+                        android:id="@+id/five_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/nine_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="9" />
+                    <Button
+                        android:id="@+id/six_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/white" />
+                </LinearLayout>
 
-    <Button
-        android:id="@+id/division_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="/" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/point_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="."
-        android:textSize="40sp" />
+                    <Button
+                        android:id="@+id/one_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/zero_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:text="0" />
+                    <Button
+                        android:id="@+id/two_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/equal_button"
-        android:layout_gravity="fill"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:background="@color/orange"
-        android:text="=" />
-</GridLayout>
+                    <Button
+                        android:id="@+id/three_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/zero_btn"
+                        android:layout_width="174dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/point_btn"
+                        android:layout_width="74dp"
+                        android:layout_height="74dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_gary"
+                        android:gravity="center"
+                        android:text="."
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/divide_btn"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_orange"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/multiply_btn"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_orange"
+                    android:gravity="center"
+                    android:text="X"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/thelose_btn"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_orange"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/plus_btn"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_orange"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/equal_btn"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_orange"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
